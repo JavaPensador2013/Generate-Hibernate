@@ -1,0 +1,12 @@
+{
+   "nameUser":"name data base user",
+   "password":"password data base",
+   "port":port data base,
+   "nameDataBase":"name data base",
+   "typeDataBase":"POSTGRESQL or MYSQl or ORACLE",
+   "hbm2ddl":"update or create or create-drop",
+   "formatSql":true or false,
+   "showSql":true or false,
+   "properties":null,
+   "host":"url data base"
+}
