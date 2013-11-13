@@ -1,8 +1,8 @@
 /**
  * <pre>
- * @author : eteixeira   
+ * @author : Ednardo Teixeira  
  * Purpose      :   Class used to ...
- * File Name    :   Pessoa.java
+ * File Name    :   Person.java
  * Package Name :   com.startapli.hibernate.entity
  * Project Name :   generate-hibernate
  *
