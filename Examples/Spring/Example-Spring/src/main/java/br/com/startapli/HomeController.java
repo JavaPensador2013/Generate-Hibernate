@@ -13,9 +13,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import br.com.startapli.crud.CrudExample;
 import br.com.startapli.entity.Person;
 
-/**
- * Handles requests for the application home page.
- */
 @Controller
 public class HomeController {
 	
@@ -25,22 +22,21 @@ public class HomeController {
 	private CrudExample crud;
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
+	public String home(Model model) {
 		
-		model.addAttribute("serverTime", "Classe -> " + crud.getClassCurrent() );
+		model.addAttribute("classCurrent", "Class -> " + crud.getClassCurrent() );
 		
 		Person p = new Person(null, "Fake Test");
 		
-        p.setId(crud.save(p));
+        	p.setId(crud.save(p));
         
-        crud.getListByName(p.getNome());
+        	crud.getListByName(p.getNome());
 		
-		for (Person pessoa : crud.listAll()) {
-			logger.info("Pessoa -> "+ pessoa.getNome()+" tem o seguinte ID: "+pessoa.getId());
+		for (Person personCurrent : crud.listAll()) {
+			logger.info("Person -> "+ personCurrent.getName()+" this is o ID: "+personCurrent.getId());
 		}
 		
-		logger.info("Classe -> " + crud.getClassCurrent());
-		logger.info("Pessoa com o ID 1 "+ crud.getPessoaResult(p.getId()).getNome());
+		logger.info("Name of the Person ID One 1 "+ crud.getPessoaResult(p.getId()).getName());
 				
 		return "home";
 	}
