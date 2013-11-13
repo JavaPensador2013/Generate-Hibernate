@@ -1,17 +1,3 @@
-/**
- * <pre>
- * @author : Ednardo Teixeira  
- * Purpose      :   Class used to ...
- * File Name    :   Person.java
- * Package Name :   com.startapli.hibernate.entity
- * Project Name :   generate-hibernate
- *
- * Update Date  :   31/10/2013
- * Update Time  :   14:10:58
- *
- * Copyright 2013 Startapli
- * </pre>
- */
 package br.com.startapli.entity;
 
 import java.io.Serializable;
