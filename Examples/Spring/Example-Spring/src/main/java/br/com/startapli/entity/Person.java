@@ -9,7 +9,7 @@
  * Update Date  :   31/10/2013
  * Update Time  :   14:10:58
  *
- * Copyright 2013 JP Morgan
+ * Copyright 2013 Startapli
  * </pre>
  */
 package br.com.startapli.entity;
@@ -32,11 +32,11 @@ public class Person implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
-	private String nome;
+	private String name;
 
-	public Person(Long id, String nome) {
+	public Person(Long id, String name) {
 		this.id = id;
-		this.nome = nome;
+		this.name = name;
 	}
 
 	public Person() {
@@ -47,16 +47,16 @@ public class Person implements Serializable {
 		return id;
 	}
 
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
 
 	public void setId(Long id) {
 		this.id = id;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }
