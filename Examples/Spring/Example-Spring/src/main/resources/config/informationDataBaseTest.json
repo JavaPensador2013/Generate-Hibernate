@@ -1,0 +1,13 @@
+{
+   "nameUser":"postgres",
+   "password":"Edn@rdo_2129",
+   "port":5432,
+   "nameDataBase":"postgres",
+   "typeDataBase":"POSTGRESQL",
+   "dialect":null,
+   "hbm2ddl":"update",
+   "formatSql":true,
+   "showSql":true,
+   "properties":null,
+   "host":"localhost"
+}

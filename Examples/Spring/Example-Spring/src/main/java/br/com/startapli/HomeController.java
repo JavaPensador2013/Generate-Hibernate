@@ -1,7 +1,5 @@
 package br.com.startapli;
 
-import java.util.Locale;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +28,7 @@ public class HomeController {
 		
         	p.setId(crud.save(p));
         
-        	crud.getListByName(p.getNome());
+        	crud.getListByName(p.getName());
 		
 		for (Person personCurrent : crud.listAll()) {
 			logger.info("Person -> "+ personCurrent.getName()+" this is o ID: "+personCurrent.getId());

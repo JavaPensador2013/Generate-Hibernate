@@ -5,7 +5,7 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 	<bean id="templateConnection" class="br.com.startapli.crud.CrudExample">
-		<constructor-arg value="config/informationDataBase.json" />
+		<constructor-arg value="config/informationDataBaseTest.json" />
 		<constructor-arg>
 			<list>
 	            <value>br.com.startapli.entity</value>

@@ -23,7 +23,7 @@ public class CrudExample extends TemplateCrud<Person>{
 	}
 	
 	public List<Person> getListByName(String name){
-		Query query = currentSession().createQuery("From Person p where p.nome = :name");
+		Query query = currentSession().createQuery("From Person p where p.name = :name");
 		query.setParameter("name", name);
 		
 		return this.getListResultDevelop(query);
